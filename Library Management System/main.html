@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+
+<!-- implementation of external CSS -->
+<link rel="stylesheet" href="main.css">
+
+<body>
+    <div class="clock">
+        <span id="time"></span>
+    </div>
+    <div class="container">
+
+        <div id="left" class="sides">
+            <div class="btn" id="label">Public Library</div>
+            <button class="btn" id="add" onclick="addRow()">Add a new book</button>
+            <div class="entireDis">
+                <div class="calc">Discount Calculator</div>
+                <div class="discount">
+                    <label for="price">Original Price</label>
+                    <textarea name="txt" id="price" placeholder="Enter Original Price"></textarea>
+                    <label for="discount">Discount Percentage</label>
+                    <textarea name="txt" id="discount" placeholder="Enter Discount Percentage"></textarea>
+                    <button class="btn" id="fp" onclick="results()">Get Final Price</button>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+        <div class="display">
+            <div class="heading">Table of Books</div>
+            <hr>
+            <table id="tdata">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>BOOK</th>
+                        <th>AUTHOR</th>
+                        <th>PRICE</th>
+                        <th>DISCOUNT %</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

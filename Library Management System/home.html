@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body{
+            background-image: url("ancient-books-adorn-library-carefully-arranged-with-classics-rare-gems_157027-2332.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            height: 600px;
+        }
+        .welcome{  
+            text-align: center;
+            cursor: default;
+        }
+        #one{
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            margin-top: 120px;
+        }
+        #two{
+            color: white;
+            font-weight: bold;
+            font-size: 110px;
+            margin-top: 50px;
+        }
+        .btn{
+            background-color: whitesmoke;
+            display: inline-block;
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 65px;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: khaki;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one" class="welcome">Welcome to</div>
+        <div id="two" class="welcome">PUBLIC  LIBRARY</div>
+        <div id="startBtn" class="btn">
+            Press to Enter
+        </div>
+    </div>
+    <script>
+        let button = document.getElementById("startBtn");
+        button.addEventListener("click", function(){
+            window.location.href = "main.html";
+        });
+    </script>
+</body>
+</html>
